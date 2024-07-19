@@ -104,7 +104,8 @@ const WeatherApp = () => {
 
   return (
     <div className="weather-app">
-      <h2>Welcome to Loons Lab Weather Forecast</h2>
+      <h1>W E L C O M E</h1>
+      <h2 className='typing-effect'>Loons Lab Weather Forecast</h2>
       
       <SearchComponent
         city={city}

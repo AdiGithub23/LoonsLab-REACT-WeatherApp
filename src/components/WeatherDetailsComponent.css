@@ -1,13 +1,13 @@
-.weather-details-container {
-    background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+   .weather-details-container {
+    background: rgba(0, 0, 0, 0.7); 
     color: #fff;
     padding: 20px;
-    margin: 20px auto; /* Center the container horizontally */
+    margin: 20px auto; 
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1000px; /* Optional: Limits the width of the container */
+    max-width: 1000px; 
   }
   
   .weather-details-header {
@@ -17,7 +17,7 @@
   }
   
   .current-date {
-    margin-left: 10px;
+    margin-left: 50px;
     font-size: 0.9em;
     color: #aaa;
   }
@@ -26,23 +26,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 900px; /* Optional: Limits the width of the content */
+    max-width: 900px; 
   }
   
   .weather-details-part-01 {
-    width: 40%; /* Adjust as needed */
+    width: 30%; 
     margin: 10px auto;
-  }
-  .weather-details-part-02 {
-    width: 60%; /* Adjust as needed */
-    margin: 10px auto;
-  }
-  
-  .weather-details-part-01 {
     text-align: center;
   }
-
-  .weather-details-part-01 h4{
+  
+  .weather-details-part-01 h4 {
     margin-top: 0;
   }
   
@@ -50,9 +43,17 @@
     max-width: 60px;
     height: 60px;
     margin-top: 10px;
+    transform: scale(2); 
+    transition: transform 0.3s ease; 
   }
-
+  
+  .weather-details-part-01 .weather-image:hover {
+    transform: scale(3); 
+  }
+  
   .weather-details-part-02 {
+    width: 70%; 
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,19 +71,32 @@
     flex: 1;
     text-align: center;
     width: 50px;
-  }
-  
-  /* .weather-details-top,
-  .weather-details-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  } */
-  
-  .weather-details-top p,
-  .weather-details-bottom p {
-    margin: 0 auto;
-    margin-bottom: 10px; 
-    padding: 0;
-  }
-  
+    transition: transform 0.3s ease; 
+  }  
+
+.lbl {
+  transition: transform 0.3s ease; 
+}
+
+.val {
+  transition: transform 0.3s ease; 
+}
+
+.weather-details-top div:hover .lbl,
+.weather-details-bottom div:hover .lbl {
+  transform: scale(1.2); 
+}
+
+.weather-details-top div:hover .val,
+.weather-details-bottom div:hover .val {
+  color: rgb(221, 255, 0);
+  font-weight: bold;
+  transform: scale(1.5); 
+}
+
+.weather-details-top p,
+.weather-details-bottom p {
+  margin: 0 auto;
+  margin-bottom: 10px; 
+  padding: 0;
+}

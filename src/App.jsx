@@ -15,13 +15,6 @@ const App = () => {
   // Password: labloons
 
   return (
-    // <div className="App">
-    //   {isLoggedIn ? (
-    //     <WeatherApp />
-    //   ) : (
-    //     <Login onLogin={handleLogin} />
-    //   )}
-    // </div>
     <Router>
       <div className="App">
         <Routes>
