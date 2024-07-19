@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  min-width: 350px;
 }
 
 /* Login.css */
@@ -14,6 +15,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   text-align: center; 
+  width: 90%;
 }
 
 .login-container h2 {
@@ -76,6 +78,28 @@ body {
   margin-top: 10px;
 }
 
+@media (max-width: 500px) {
+  .login-container {
+    max-width: 90%; 
+    padding: 15px;
+  }
+
+  .login-container h2 {
+    font-size: 1.5em; 
+  }
+
+  .login-container button {
+    font-size: 14px; 
+    padding: 10px; 
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 8px; 
+  }
+}
+
+
 /* ====================================================================================================================================== */
 
 /* WeatherApp Page */
@@ -85,9 +109,19 @@ body {
   background-image: url('./assets/pexels-summerstock-325117.jpg'); 
   /* background-color: rgba(0, 0, 0, 0.5); */
   background-size: cover;
+  background-repeat: repeat;
   background-position: center;
+  background-attachment: fixed;
   padding: 20px;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.weather-app::after {
+  content: "";
+  display: block;
+  height: 1500px;
 }
 
 .weather-app h1 {
@@ -95,16 +129,19 @@ body {
   text-align: center;
   margin: 20px auto;
   margin-bottom: 0;
+  font-size: 2em;
 }
 .weather-app h2 {
   color: #fff;
   text-align: center;
   margin: 10px auto;
   margin-bottom: 25px;
+  font-size: 1.5em;
 }
 
 .weather-app h3 {
   color: #fff;
+  font-size: 1.2em;
 }
 
 .typing-text {
@@ -125,4 +162,26 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: #fff; }
+}
+
+@media (max-width: 600px) {
+  .weather-app {
+    padding: 15px;
+  }
+
+  .weather-app h1 {
+    font-size: 1.5em; 
+  }
+
+  .weather-app h2 {
+    font-size: 1.2em; 
+  }
+
+  .weather-app h3 {
+    font-size: 1em; 
+  }
+
+  .typing-text {
+    font-size: 1.2em; 
+  }
 }

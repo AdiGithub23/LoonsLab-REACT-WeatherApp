@@ -3,6 +3,7 @@ import SearchComponent from '../SearchComponent.jsx';
 import WeatherDetailsComponent from '../WeatherDetailsComponent.jsx';
 import WeatherForecastComponent from '../WeatherForecastComponent.jsx';
 
+
 const WeatherApp = () => {
   const [city, setCity] = useState('Colombo');
   const [latitude, setLatitude] = useState('');
@@ -101,6 +102,16 @@ const WeatherApp = () => {
   };
 
   const currentDateTime = formatDate(new Date());
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      document.querySelector('.weather-app').style.backgroundPositionY = `${scrollY * 0.5}px`;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="weather-app">

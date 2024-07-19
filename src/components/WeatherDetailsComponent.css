@@ -100,3 +100,29 @@
   margin-bottom: 10px; 
   padding: 0;
 }
+
+@media (max-width: 455px) {
+  .weather-details-container {
+    padding: 15px;
+  }
+
+  .weather-details-content {
+    flex-direction: column;
+  }
+
+  .current-date {
+    font-size: 0.8em;
+  }
+
+  .weather-details-top p,
+  .weather-details-bottom p {
+    font-size: 0.7em;
+  }
+
+  .weather-details-top .lbl,
+  .weather-details-top .val,
+  .weather-details-bottom .lbl,
+  .weather-details-bottom .val {
+    font-size: 0.7em; 
+  }
+}
