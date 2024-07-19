@@ -1,0 +1,88 @@
+.weather-details-container {
+    background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+    color: #fff;
+    padding: 20px;
+    margin: 20px auto; /* Center the container horizontally */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px; /* Optional: Limits the width of the container */
+  }
+  
+  .weather-details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .current-date {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
+  .weather-details-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px; /* Optional: Limits the width of the content */
+  }
+  
+  .weather-details-part-01 {
+    width: 40%; /* Adjust as needed */
+    margin: 10px auto;
+  }
+  .weather-details-part-02 {
+    width: 60%; /* Adjust as needed */
+    margin: 10px auto;
+  }
+  
+  .weather-details-part-01 {
+    text-align: center;
+  }
+
+  .weather-details-part-01 h4{
+    margin-top: 0;
+  }
+  
+  .weather-image {
+    max-width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .weather-details-part-02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .weather-details-top,
+  .weather-details-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .weather-details-top div,
+  .weather-details-bottom div {
+    flex: 1;
+    text-align: center;
+    width: 50px;
+  }
+  
+  /* .weather-details-top,
+  .weather-details-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  } */
+  
+  .weather-details-top p,
+  .weather-details-bottom p {
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    padding: 0;
+  }
+  

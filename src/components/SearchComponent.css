@@ -1,0 +1,53 @@
+/* SearchComponent.css */
+
+.search-container {
+    background-color: rgba(21, 21, 21, 0.5); /* Black background with 0.5 opacity */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%; /* Increase width to accommodate horizontal layout */
+    margin: 20px auto;
+    text-align: center; /* Center align the content */
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 15px;
+    justify-content: center; /* Center align items horizontally */
+  }
+  
+.search-container form input[type="text"] {
+    font-weight: bold;
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    width: 180px; /* Fixed width for horizontal layout */
+    height: 40px; /* Fixed width for horizontal layout */
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder color */
+    text-align: center; /* Center align placeholder text */
+    font-weight: 100;
+  }
+  
+  .search-container form button {
+    border-radius: 50px; /* Rounded corners */
+    padding: 5px 20px;
+    height: 30px; /* Fixed width for horizontal layout */
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px; /* Add space above the button */
+  }
+  
+  .search-container form button:hover {
+    box-shadow: 0 0 10px rgb(0, 180, 0); 
+  }
+  

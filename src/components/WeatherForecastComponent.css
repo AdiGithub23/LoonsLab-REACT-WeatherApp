@@ -1,0 +1,43 @@
+.weather-forecast-container {
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #fff;
+    padding: 15px;
+    margin: 20px auto; /* Center the container horizontally */
+    border-radius: 8px;
+    max-width: 100%; /* Optional: Limits the width of the container */
+    height: 300px;
+  }
+  
+  .container-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align items horizontally */
+  }
+  
+  .container-item {
+    background: rgba(0, 0, 0, 0.5); /* Slightly white background for items */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center; /* Center align text within each item */
+    max-width: 200px; /* Optional: Limits the width of each item */
+  }
+  
+  .view-more-button {
+    display: block;
+    background: #a40b0b;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .weather-forecast-container button:hover {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000; 
+    border-radius: 50px;
+  }
+  
